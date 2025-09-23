@@ -138,7 +138,7 @@ LIMIT 50000;
 ```
 
 ## PROBLEM 6: How many GCP transactions take place in a day?
-**Insight:** This query shows the dail;y trends of GCP transactions. This helps in monitoring growth, sudden drops and seasonality in payment activities. 
+**Insight:** This query shows the daily trends of GCP transactions. This helps in monitoring growth, sudden drops and seasonality in payment activities. 
 
 ## SQL QUERY 
 
