@@ -69,7 +69,7 @@ ORDER BY subscription_month ASC
 LIMIT 1000;
 ```
 
-## PROBLEM 3:How many unique users exist?
+## PROBLEM 3: How many unique users exist?
 **Insight:** This query returns all unique users in the system. This is useful to the business to determine their customer base and effective in marketing strategies. 
 
 ## SQL QUERY
@@ -120,7 +120,7 @@ WHERE currency = 'KSH';
 
 ```
 
-## PROBLEM 5: How many transactoions were processed using GCP Payments?
+## PROBLEM 5: How many transactions were processed using GCP Payments?
 **Insight:** While some payments are under mobile payment, international clients use GCP Payments. This query returns how many transactions were made using Google Pay. 
              This helps the business determine the adoption and reliability of Google Pay as a payment method. 
 
@@ -160,7 +160,7 @@ ORDER BY transaction_date ASC
 LIMIT 1000;
 
 ``` 
-## PROBLEM 7: How many GCP transactions take plasce in a month? 
+## PROBLEM 7: How many GCP transactions take place in a month? 
 **Insight:** The results show GCP payment trend over a month enabling the business to know the perfomance trend over the month, determine the highest perfoming month and align with the marketing team accordingly. 
              It also helps monitor the long term reliablity of the payment model overtime.
 
