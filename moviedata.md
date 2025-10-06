@@ -1,3 +1,7 @@
+# PesaFlix Movie Data Analysis
+
+This document contains SQL queries and insights for analyzing viewing behavior, engagement trends, and content performance on the PesaFlix platform.
+
 ## 📑 Table of Contents
 
 1. [Most watched movies](#problem-1-most-watched-movies)  
