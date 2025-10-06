@@ -5,11 +5,11 @@ It consolidates data from both active and archived subscription tables to provid
 
 📑 Table of Contents
 
-[Total Revenue per Currency](#total-revenue-per-currency)
-[Total Revenue by Date and Currency](#total-revenue-by-date-and-currency)
-[Monthly Revenue by Currency](#monthly-revenue-by-currency)
-[Detailed Transactions Showing User and Payment Data](#detailed-transactions-showing-user-and-payment-data)
-[GCP Payments](#gcp-payments)
+1. [Total Revenue per Currency](#total-revenue-per-currency)
+2. [Total Revenue by Date and Currency](#total-revenue-by-date-and-currency)
+3. [Monthly Revenue by Currency](#monthly-revenue-by-currency)
+4. [Detailed Transactions Showing User and Payment Data](#detailed-transactions-showing-user-and-payment-data)
+5. [GCP Payments](#gcp-payments)
 
 ## Problem 1: Total Revenue per Currency
 
