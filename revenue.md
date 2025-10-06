@@ -12,6 +12,7 @@ It consolidates data from both active and archived subscription tables to provid
 5. [GCP Payments](#gcp-payments)
 
 
+
 ## Problem 1: Total Revenue per Currency
 
 **Insight:** This query provides a comprehensive view of total earnings across all currencies, combining data from both active and archived subscription tables.
