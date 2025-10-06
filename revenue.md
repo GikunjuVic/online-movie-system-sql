@@ -175,7 +175,7 @@ SELECT currency AS currency,
 - Track subscription lifecycle (start and end dates)
 - Quickly access raw JSON data for further validation or debugging
   
-It’s essentially a transaction log for GCP payments, giving a clear and concise view of recent activity.
+It’s essentially a transaction log for GCP payments, giving a clear and concise view of ongoing subscription activity.
 
 ## SQL Query
 
