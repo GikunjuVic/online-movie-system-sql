@@ -74,7 +74,7 @@ ORDER BY
 
 ```
 
-## Problem 5: List of distinct movies watched per day and the no of times 
+## Problem 4: List of distinct movies watched per day and the no of times 
 
 **Insight:** This query provides a day-by-day breakdown of viewing diversity and engagement intensity on the PesaFlix platform. It helps identify how many unique movies users are watching daily, and which titles attract repeat views.
 
