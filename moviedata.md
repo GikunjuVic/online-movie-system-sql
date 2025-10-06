@@ -1,10 +1,15 @@
 📑 Table of Contents
 
 Problem 1: Most Watched Movies
+
 Problem 2: Most Watched Genre Sections
+
 Problem 3: Total Number of Movies Watched per Day
+
 Problem 4: List of Distinct Movies Watched per Day and Number of Times
+
 Problem 5: Distinct Movies Watched per Month
+
 Problem 6: Total Number of Movies Watched per Month and the Titles
 
 ## Problem 1: Most watched movies 
