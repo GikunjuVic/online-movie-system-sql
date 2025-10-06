@@ -1,11 +1,11 @@
 ## 📑 Table of Contents
 
-1.  [Most watched movies](#problem-1-most-watched-movies)  
+1. [Most watched movies](#problem-1-most-watched-movies)  
 2. [Most watched Genre Sections](#problem-2-most-watched-genre-sections)  
-3. [Problem 3: Total number of movies watched per day](#problem-3-total-number-of-movies-watched-per-day)  
-4. [Problem 4: List of distinct movies watched per day and the number of times](#problem-4-list-of-distinct-movies-watched-per-day-and-the-number-of-times)
-5. [Problem 5: Distinct movies watched in a month](#problem-5-distinct-movies-watched-in-a-month)  
-6. [Problem 6: Total number of movies watched in a month and the titles](#problem-6-total-number-of-movies-watched-in-a-month-and-the-titles)
+3. [Total number of movies watched per day](#problem-3-total-number-of-movies-watched-per-day)  
+4. [List of distinct movies watched per day and the number of times](#problem-4-list-of-distinct-movies-watched-per-day-and-the-number-of-times)
+5. [Distinct movies watched in a month](#problem-5-distinct-movies-watched-in-a-month)  
+6. [Total number of movies watched in a month and the titles](#problem-6-total-number-of-movies-watched-in-a-month-and-the-titles)
 
 ## Problem 1: Most watched movies 
 
