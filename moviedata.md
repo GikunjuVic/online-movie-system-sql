@@ -31,7 +31,7 @@ LIMIT 1000;
 
 ## SQL Query
 
-``sql
+```sql
 
 SELECT title AS title,
        sum(views) AS `SUM(views)`
@@ -43,3 +43,89 @@ ORDER BY `SUM(views)` DESC
 LIMIT 5000;
 
 ```
+
+## Problem 3: Total number of movies watched per day 
+
+**Insight:** This query provides a daily watch activity timeline, revealing how engagement fluctuates across days. This is useful to the organization to show the watching trend, identify high traffic days and engagement stability. 
+
+## SQL Query
+
+```sql
+
+SELECT 
+    DATE(watchdatetime) AS watch_date, 
+    COUNT( video_guid) AS total_movies_watched
+FROM 
+    main.stats_video_charts
+WHERE 
+    watchtimechart > 0
+GROUP BY 
+    watch_date
+ORDER BY 
+    watch_date;
+
+```
+
+## Problem 5: List of distinct movies watched per day and the no of times 
+
+**Insight:** This query provides a day-by-day breakdown of viewing diversity and engagement intensity on the PesaFlix platform. It helps identify how many unique movies users are watching daily, and which titles attract repeat views.
+
+## SQL Query
+
+```sql
+
+SELECT 
+    watch_date, 
+    COUNT(DISTINCT video_guid) AS total_movies_watched,
+    GROUP_CONCAT(
+        CASE 
+            WHEN times_watched > 1 THEN CONCAT(c.name, ' (', times_watched, ' times)')
+            ELSE c.name
+        END 
+        ORDER BY c.name ASC SEPARATOR ', ') AS movies_list
+FROM (
+    SELECT 
+        DATE(watchdatetime) AS watch_date, 
+        video_guid, 
+        COUNT(video_guid) AS times_watched
+    FROM 
+        main.stats_video_charts
+    WHERE 
+        watchtimechart > 0
+    GROUP BY 
+        watch_date, video_guid
+) AS movie_counts
+JOIN 
+    content c ON c.video_id = movie_counts.video_guid
+GROUP BY 
+    watch_date
+ORDER BY 
+    watch_date DESC;
+
+```
+
+## Problem 5: Distinct movies watched in a month 
+
+**Insight:** This query shows the distinct number of movies watched in a month and lists their titles. This helps in analyzing whether users are repeating movies or exploring new movies. This helps in content planning and delivery. 
+
+## SQL Query
+
+```sql
+
+SELECT 
+    DATE_FORMAT(s.watchdatetime, '%Y-%m') AS month, 
+    COUNT(DISTINCT s.video_guid) AS distinct_videos_watched,  
+    GROUP_CONCAT(DISTINCT c.name ORDER BY c.name) AS movies_watched 
+FROM 
+    main.stats_video_charts s
+JOIN 
+    main.content c ON s.video_guid = c.video_id 
+WHERE 
+    s.watchtimechart > 0  
+GROUP BY 
+    month  
+ORDER BY 
+    month;
+
+```
+
