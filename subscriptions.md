@@ -140,7 +140,7 @@ LIMIT 50000;
 ## Problem 6: How many GCP transactions take place in a day?
 **Insight:** This query shows the daily trends of GCP transactions. This helps in monitoring growth, sudden drops and seasonality in payment activities. 
 
-## SQL Queryu 
+## SQL Query
 
 ```sql 
 
@@ -160,11 +160,11 @@ ORDER BY transaction_date ASC
 LIMIT 1000;
 
 ``` 
-## PROBLEM 7: How many GCP transactions take place in a month? 
+## Problem 7: How many GCP transactions take place in a month? 
 **Insight:** The results show GCP payment trend over a month enabling the business to know the perfomance trend over the month, determine the highest perfoming month and align with the marketing team accordingly. 
              It also helps monitor the long term reliablity of the payment model overtime.
 
-## SQL QUERY
+## SQL Query
 
 ```sql
 
