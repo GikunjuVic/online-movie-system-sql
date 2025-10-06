@@ -164,7 +164,7 @@ It’s essentially a transaction log for GCP payments, giving a clear and concis
 
 ## SQL Query
 
-```
+```sql
 SELECT 
     s.createdat AS revenue_date,
     s.user_id AS user_id,
