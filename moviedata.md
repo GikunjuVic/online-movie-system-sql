@@ -1,4 +1,22 @@
-## Problem 1 : Most watched Genre Sections.
+## Problem 1: Most watched movies 
+
+**Insight:** This query lists the top-performing movies by total view count. It helps identify the titles are driving the most engagement and content that might deserve featured placement helping the organization in promotion and marketing. 
+
+## SQL Query
+
+```sql
+
+SELECT title AS title,
+       sum(views) AS `SUM(views)`
+FROM
+  (select *
+   from bunny_videos) AS virtual_table
+GROUP BY title
+ORDER BY `SUM(views)` DESC
+LIMIT 5000;
+
+```
+## Problem 2: Most watched Genre Sections
 
 **Insight:** This query surfaces the most engaging sections on the PesaFlix platform based on actual user watch activity.
 Sections at the top of this list are high-performing placements that attract more viewer attention. This can influence homepage layout, recommendation strategies, and promotional content placement.
@@ -22,25 +40,6 @@ FROM
    ORDER BY total_watched DESC
    LIMIT 100) AS virtual_table
 LIMIT 1000;
-
-```
-
-## Problem 2: Most watched movies 
-
-**Insight:** This query lists the top-performing movies by total view count. It helps identify the titles are driving the most engagement and content that might deserve featured placement helping the organization in promotion and marketing. 
-
-## SQL Query
-
-```sql
-
-SELECT title AS title,
-       sum(views) AS `SUM(views)`
-FROM
-  (select *
-   from bunny_videos) AS virtual_table
-GROUP BY title
-ORDER BY `SUM(views)` DESC
-LIMIT 5000;
 
 ```
 
