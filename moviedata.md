@@ -1,3 +1,12 @@
+📑 Table of Contents
+
+Problem 1: Most Watched Movies
+Problem 2: Most Watched Genre Sections
+Problem 3: Total Number of Movies Watched per Day
+Problem 4: List of Distinct Movies Watched per Day and Number of Times
+Problem 5: Distinct Movies Watched per Month
+Problem 6: Total Number of Movies Watched per Month and the Titles
+
 ## Problem 1: Most watched movies 
 
 **Insight:** This query lists the top-performing movies by total view count. It helps identify the titles are driving the most engagement and content that might deserve featured placement helping the organization in promotion and marketing. 
@@ -128,3 +137,27 @@ ORDER BY
 
 ```
 
+## Problem 6: Total number of movies watched in a month and the titles. 
+
+**Insight:** This query shows the total number of movies watched in a month while also showing the titles. However, due to the bulkiness of the data, it is visualized in a bar chart showing the total number of movies. It reveals how active the platform is over time and helps detect content performance trends at the monthly level.
+
+## SQL Query
+
+```sql
+
+SELECT 
+    DATE_FORMAT(s.watchdatetime, '%Y-%m') AS month, 
+    COUNT(s.video_guid) AS total_movies_watched,
+    GROUP_CONCAT(c.name ORDER BY c.name) AS movies_watched
+FROM 
+    main.stats_video_charts s
+JOIN 
+    main.content c ON s.video_guid = c.video_id 
+WHERE 
+    s.watchtimechart > 0  
+GROUP BY 
+    month  
+ORDER BY 
+    month;
+
+```
