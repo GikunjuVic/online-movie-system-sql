@@ -3,6 +3,13 @@
 This document contains SQL queries and insights designed to analyze and track revenue performance across the PesaFlix platform.
 It consolidates data from both active and archived subscription tables to provide a complete financial picture from total earnings to detailed transaction-level insights.
 
+## 📑 Table of Contents
+
+1. [Total Revenue per Currency](#problem-1-total-revenue-per-currency)
+2. [Total Revenue by Date and Currency](#problem-2-total-revenue-by-date-and-currency)
+3. [Monthly Revenue by Currency](#problem-3-monthly-revenue-by-currency)
+4. [Detailed Transactions Showing User and Payment Data](#problem-4-detailed-transactions-showing-user-and-payment-data)
+5. [GCP Payments](#problem-5-gcp-payments)
 
 
 ## Problem 1: Total Revenue per Currency
